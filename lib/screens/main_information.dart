@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:wallet/screens/registration_otp.dart';
 
 import '../components/input_text.dart';
 import '../components/material_button.dart';
-import 'main_screen.dart';
 
 class MainInformation extends StatefulWidget {
   @override
@@ -87,8 +87,10 @@ class _MainInformationState extends State<MainInformation> {
               padding: const EdgeInsets.all(25.0),
               child: FinalButton(
                   onPress: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MainScreen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => RegistrationOtp()));
                   },
                   label: 'Send Verification Code ',
                   buttonColor: Colors.grey.shade500,
